@@ -1,6 +1,6 @@
 #!/bin/bash
 echo " " > fileInput
-for pl in Sun Venus Earth Mars
+for pl in $*
 do
     grep -A6 "// $pl" effemeridi.h | grep -v "// $pl" >> fileInput
     echo " " >> fileInput
