@@ -6,8 +6,8 @@ LIBSROOT   = `root-config --glibs`
 all: Main
 
 Vector.o: Vector.cpp
-	$(CC) $(CFLAGS) -c Vector.cpp      $(CFLAGSROOT)
+	$(CC) $(CFLAGS) -c Vector3.cpp      $(CFLAGSROOT)
 Main: Main.cpp Vector.o 
-	$(CC) $(CFLAGS) -o Main Main.cpp Vector.o $(CFLAGSROOT) $(LIBSROOT)
+	$(CC) $(CFLAGS) -o Main Main.cpp Vector3.o $(CFLAGSROOT) $(LIBSROOT)
 clean:
 	rm *.o
