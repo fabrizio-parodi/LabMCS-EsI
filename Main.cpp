@@ -5,16 +5,17 @@
 using namespace std;
 
 int main(){
+
   /*
   //Costruzione da particella "nota"
   MatPoint p(Electron(),Vector3(1,0,0));
-  cout << p.Massa() << " " << p.Carica() << endl;
+  cout << p.Mass() << " " << p.Charge() << endl;
   cout << p.R() << endl;
   cout << p.V() << endl;
 
   //Costruzione punto materiale generico
   MatPoint pm(1,0,Vector3(1,0,0),Vector3(1,1,1));
-  cout << pm.Massa() << " " << pm.Carica() << endl;
+  cout << pm.Mass() << " " << pm.Charge() << endl;
   cout << pm.R() << endl;
   cout << pm.V() << endl;
 
